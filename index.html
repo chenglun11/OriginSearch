@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Origin Search</title>
+</head>
+<body>
+    <!-- main picture -->
+    <section class="section">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column is-half">
+              <figure>
+                <img src="http://img-url-lchnan.oss-cn-hangzhou.aliyuncs.com/2022/02/16/e8e29b1d6a419.png" alt="Hello!">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    <!-- input 框 -->
+    <div class="field is-fullwidth" id="filed1">
+       <p class="control has-icons-left has-icons-right">
+            <input class="input" type="text" placeholder="!" id="ques" autofocus="true" onkeydown="bin()">
+            <span class="icon is-small is-left">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </span>
+        </p>
+    </div>
+
+    <!-- select框 组件 -->
+    <div class="field has-addons" id="che_box1">
+        <div class="select is-fullwidth">
+            <select id="sel">
+                <option value="-1" onchange="bin() ">Select Engine</option>
+                <option value="0" onchange="bin()">Google</option>
+                <option value="1" onchange="bin()">Baidu</option>
+                <option value="2" onchange="bin()">Bing</option>
+                <option value="3" onchange="bin()">WIKI镜像</option>
+            </select>
+        </div>
+
+        <div class="control">
+            <button  class="button is-info" onclick="sel_check()" id="submit">查询 | Check</button>
+        </div>
+    </div> 
+
+    <!-- notification 框 -->
+    <div class="notification is-danger is-light">
+        <p>Beta Ver 1.4 <a href="/">更新记录</a></p>
+
+    </div>
+    
+    <!-- URL列表 -->
+    <div class="columns is-2-mobile">
+        <div class="column">
+          <a href="https://bilibili.com" target="__blank">Bilibili</a>
+        </div>
+        <div class="column">
+            <a href="https://tencent.com" target="__blank">Tencent</a>
+        </div>
+        <div class="column">
+            <a href="https://weibo.com" target="__blank">Weibo</a>
+        </div>
+        <div class="column">
+            <a href="https://lchnan.cn" target="__blank">主站</a>
+        </div>
+        <div class="column">
+            <a href="https://gov.cn" target="__blank">GOV</a>
+        </div>
+        <div class="column">
+            <a href="https://lchnan.cn/zh/privacy.html" target="__blank">Privacy 隐私政策</a>
+        </div>
+      </div>
+
+    <!-- footer -->
+    <footer class="footer has-background-light">
+        <div class="content has-text-centered">
+            Performance By 
+            <a href="https://www.aliyun.com"target="_blank"style="text-decoration:none">
+                <img style="height:15px;vertical-align:middle;" alt="aliyunLogo" src="https://lchnan.cn/aliyun.png">
+            </a>
+            | CopyRight © 2017-2021 | 
+            <a href="https://status.lchnan.cn"target="_blank"style="text-decoration:none">Status</a>
+            </a>
+            <br>
+              ICP证:
+            <a href="https://beian.miit.gov.cn"target="_blank"style="text-decoration:none">苏ICP备2020053015号-2 </a>
+            <br>
+            |  萌ICP备<a href="https://icp.gov.moe/?keyword=20210917" target="_blank"style="text-decoration:none"> 20210917号</a>
+            </a>
+            </div>
+        </footer>
+</body>
+<script src="./js/index.js" type="text/javascript"></script>
+</html>

@@ -1,0 +1,14 @@
+#che_box1{
+    margin: 0 auto;
+}
+body{
+    margin-top: 75px;
+    width: 100%;
+    text-align: center;
+}
+.box{
+    display: flex;
+}
+div{
+    margin-top: 20px;
+}
