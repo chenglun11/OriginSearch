@@ -14,7 +14,7 @@ function sel_check(){
     var fin_url = null;
     var con_va;
 
-    //console.log(arr_1);
+    console.log(arr_1);
     
     switch(op_value)
     {
@@ -49,7 +49,6 @@ function sel_check(){
             fin_url = bing_url+rev_ques;
             //window.open(fin_url);        //for test
             window.location.href=fin_url;
-            console.log("error");
             fin_url = null;
     }
     
@@ -68,29 +67,29 @@ function bin(){
     
     var select_input = document.getElementById("sel");
 
-    input.addEventListener("keydown", function(event) {
+    // input.addEventListener("keydown", function(event) {
+    //     event.preventDefault();
+    //     if (event.keyCode === 13) {
+    //         document.getElementById("submit").click();
+    //         console.log("1");
+    //         }
+    //     });
+
+    if(select_input.value !=null){
+        select_input.addEventListener("keyup", function(event) {
         event.preventDefault();
         if (event.keyCode === 13) {
             document.getElementById("submit").click();
-            console.log("1");
             }
         });
-
-    // if(select_input.value !=null){
-    //     select_input.addEventListener("keydown", function(event) {
-    //     event.preventDefault();
-    //     if (event.keyCode === 13) {
-    //         document.getElementById("submit").click();
-    //         }
-    //     });
-    // }
-    // if(input.value != null){
-    //     input.addEventListener("keyup", function(event) {
-    //     event.preventDefault();
-    //     if (event.keyCode === 13) {
-    //         document.getElementById("submit").click();
-    //         }
-    //     });
-    // }
+    }
+    if(input.value != null){
+        input.addEventListener("keyup", function(event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+            document.getElementById("submit").click();
+            }
+        });
+    }
     
 }
