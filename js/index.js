@@ -75,16 +75,8 @@ function bin(){
     //         }
     //     });
 
-    if(select_input.value !=null){
-        select_input.addEventListener("keyup", function(event) {
-        event.preventDefault();
-        if (event.keyCode === 13) {
-            document.getElementById("submit").click();
-            }
-        });
-    }
     if(input.value != null){
-        input.addEventListener("keyup", function(event) {
+        input.addEventListener("keydown", function(event) {
         event.preventDefault();
         if (event.keyCode === 13) {
             document.getElementById("submit").click();
