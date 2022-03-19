@@ -53,35 +53,15 @@ function sel_check(){
     }
     
     console.log(fin_url);
-    // var back = document.getElementById("ques");
-    // back.addEventListener("keyup", function(event) {
-    // event.preventDefault();
-    // if (event.keyCode === 13) {
-    //     document.getElementById("submit").click();
-    // }
-    // });
 }
 
-function bin(){
-    var input = document.getElementById("ques");
-    
-    var select_input = document.getElementById("sel");
+  var input = document.getElementById("ques");
+  var select_input = document.getElementById("sel");
 
-    // input.addEventListener("keydown", function(event) {
-    //     event.preventDefault();
-    //     if (event.keyCode === 13) {
-    //         document.getElementById("submit").click();
-    //         console.log("1");
-    //         }
-    //     });
-
-    if(input.value != null){
-        input.addEventListener("keydown", function(event) {
-        event.preventDefault();
-        if (event.keyCode === 13) {
-            document.getElementById("submit").click();
-            }
-        });
-    }
-    
-}
+  input.addEventListener("keydown", function(event) {
+      event.preventDefault();
+      if (event.keyCode === 13) {
+          document.getElementById("submit").click();
+          console.log("1");
+          }
+        });  
