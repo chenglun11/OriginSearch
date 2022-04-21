@@ -12,8 +12,8 @@
 npm run build
 ```
 ## Install
-*请确认配置正确*
-将/dist/目录下的所有文件拷贝到Web服务器中,index.html为主页
+*请确认配置正确*  
+将 **/dist/** 目录下的所有文件拷贝到Web服务器中,index.html为主页
 
 ---
 ## ChangeLog
